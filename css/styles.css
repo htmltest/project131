@@ -15,9 +15,13 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .welcome-left {position:absolute; left:0; top:0; width:388px; height:256px; background:url(../images/welcome-left.png)}
 .welcome-right {position:absolute; right:0; top:0; width:381px; height:258px; background:url(../images/welcome-right.png)}
 .logo {position:absolute; left:130px; top:28px; width:60px; height:72px; background:url(../images/logo.png)}
+.welcome-rules {position:absolute; right:148px; top:63px; text-transform:uppercase; color:#fff; text-decoration:none; font-size:14px; line-height:14px; letter-spacing:0.05em}
+.welcome-rules:hover {text-decoration:underline}
 .welcome-content {position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); text-align:center; white-space:nowrap}
-.welcome-text {font-weight:600; font-size:62px; line-height:64px; background-image:-webkit-linear-gradient(0, rgba(33, 150, 243, 1) 0%, rgba(237, 94, 205, 1) 50%, rgba(244, 67, 54, 1) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
+.welcome-text {font-weight:600; font-size:62px; line-height:64px; background-image:-webkit-linear-gradient(0, #a771da 0%, rgba(237, 94, 205, 1) 50%, #ef56a3 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
 .welcome-text img {vertical-align:bottom; margin-bottom:6px}
+.welcome-text+.welcome-text {background:none}
+.welcome-text span {background-image:-webkit-linear-gradient(0, #a771da 0%, rgba(237, 94, 205, 1) 50%, #ef56a3 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
 .welcome-dates {font-weight:600; font-size:24px; line-height:33px; color:#595959; padding:30px 0 0 0}
 .welcome-dates strong {font-weight:bold}
 .welcome-discount {margin:30px auto 0 auto; width:194px; height:194px; padding:42px 0 0 0; background:#ff485e; border:5px solid #fff; color:#fff; border-radius:50%; cursor:pointer}
@@ -26,10 +30,11 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .welcome-discount-value span {font-size:22px; font-weight:300}
 
 @media (max-width:1232px) {
-    .welcome {height:729px; background-image:url(../images/welcome-mobile.png)}
+    .welcome {height:729px; margin-bottom:75px; background-image:url(../images/welcome-mobile.png)}
     .welcome-left {width:186px; height:167px; background:url(../images/welcome-left-mobile.png)}
     .welcome-right {width:165px; height:167px; background:url(../images/welcome-right-mobile.png)}
-    .logo {left:28px; top:7px}
+    .logo {left:28px; top:30px}
+    .welcome-rules {top:60px; right:40px}
     .welcome-text {font-size:44px; line-height:54px}
     .welcome-text img {height:34px; margin-bottom:9px}
     .welcome-dates {font-size:20px; line-height:27px; padding:27px 0 0 0}
@@ -40,11 +45,13 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 }
 
 .item {min-height:100vh; height:635px; position:relative}
-.item-wave {position:absolute; left:0; top:-160px; right:0; bottom:-160px}
+.item+.item+.item {min-height:calc(100vh + 200px); height:835px}
+.item-wave {position:absolute; left:0; top:-210px; right:0; bottom:-260px}
 .item-wave svg {display:block; position:absolute; left:0; top:0; width:100%; height:100%; -webkit-background-clip:text; background:transparent}
 
 @media (max-width:1232px) {
     .item {height:1100px}
+    .item+.item+.item {min-height:100vh; height:1200px}
 }
 
 .item-inner {width:1233px; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index:2}
@@ -56,15 +63,15 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .item-reverse .item-content {margin:0 621px 0 0}
 .item-content-inner {float:left; width:100%}
 .item-title {line-height:0; padding:46px 0 0 0}
-.item-text {margin:0 -20px 0 0; padding:21px 0 0 0; font-weight:600; font-size:40px; line-height:40px; background-image:-webkit-linear-gradient(0, rgba(255, 107, 116, 1) 0%, rgba(61, 57, 229, 1) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
-.item-prices {width:385px; height:103px; border:2px solid #9750b1; border-radius:8px; position:relative; margin:33px 0 0 0}
+.item-text {margin:0 -20px 0 0; padding:21px 0 10px 0; font-weight:600; font-size:40px; line-height:40px; background-image:-webkit-linear-gradient(0, rgba(255, 107, 116, 1) 0%, rgba(61, 57, 229, 1) 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
+.item-prices {width:385px; height:103px; border:2px solid #9750b1; border-radius:8px; position:relative; margin:23px 0 0 0}
 .item-prices::before {content:""; display:block; position:absolute; left:235px; top:18px; bottom:18px; width:1px; background:#9750b1}
 .item-price {position:absolute; left:17px; top:12px; font-weight:600; font-size:44px; line-height:44px; color:#ff485e}
 .item-price span {font-size:20px}
 .item-oldprice {position:absolute; left:17px; top:58px; font-size:20px; line-height:24px; color:#686868}
 .item-oldprice span {font-size:24px; text-decoration:line-through}
 .item-variants {position:absolute; left:256px; top:16px; font-weight:600; font-size:22px; line-height:33px; color:#2d65d1}
-.item-buy {font-size:15px; line-height:20px; color:#474747; text-transform:uppercase; padding:35px 0 0 0}
+.item-buy {font-size:24px; line-height:38px; color:#474747; text-transform:uppercase; padding:35px 0 0 0; font-weight:600}
 .item-shops {line-height:0; padding:8px 0 0 0}
 .item-shops::after {content:""; display:block; clear:both}
 .item-shop {float:left; margin:0 0 0 15px}
@@ -90,7 +97,7 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
     .item-title {padding:60px 0 0 0; text-align:center}
     .item-title img {height:45px}
     .item-text {margin:0; font-size:32px; line-height:30px; text-align:center}
-    .item-prices {margin:33px auto 0 auto}
+    .item-prices {margin:23px auto 0 auto}
     .item-buy {text-align:center}
     .item-shops {font-size:0; line-height:0; letter-spacing:-1px; margin:0 -6px; text-align:center}
     .item-shop {float:none; display:inline-block; vertical-align:top; margin:6px}
@@ -102,14 +109,14 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
     .item-pref-text {float:none; margin:8px 0 0 0}
 }
 
-.social {height:331px; position:relative; text-align:center; font-size:0; line-height:0; letter-spacing:-1px}
+.social {height:431px; position:relative; text-align:center; font-size:0; line-height:0; letter-spacing:-1px}
 .footer-bg {display:block; position:absolute; left:0; bottom:0; width:100%; max-height:none}
 .footer-bg-mobile {display:none}
 .social a {position:relative; display:inline-block; vertical-align:top; margin:0 26px; transition:all 0.2s; border-radius:50%; transition:all 0.2s}
 .social a:hover {transform:translateY(-5px); box-shadow:0px 4px 12px rgba(98, 121, 140, 0.3)}
 
 @media (max-width:1232px) {
-    .social {height:197px; margin-top:50px}
+    .social {height:247px}
     .footer-bg-mobile {display:block; position:absolute; left:0; bottom:0; width:100%; max-height:none}
     .footer-bg {display:none}
     .social a {margin:0 20px}
