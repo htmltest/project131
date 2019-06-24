@@ -25,7 +25,7 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .welcome-dates {font-weight:600; font-size:24px; line-height:33px; color:#595959; padding:30px 0 0 0}
 .welcome-dates strong {font-weight:bold}
 .welcome-discount {margin:30px auto 0 auto; width:194px; height:194px; font-weight:600; padding:57px 0 0 0; background:#ff485e; border:5px solid #fff; color:#fff; border-radius:50%; cursor:pointer}
-.welcome-discount-title {font-size:22px; line-height:37px}
+.welcome-discount-title {font-size:24px; line-height:37px}
 
 @media (max-width:1232px) {
     .welcome {height:729px; margin-bottom:75px; background-image:url(../images/welcome-mobile.png)}
@@ -69,7 +69,7 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .item-prices-shop a {display:block; border-radius:4px; transition:all 0.2s}
 .item-prices-shop a:hover {transform:translateY(-5px); box-shadow:0px 4px 12px rgba(98, 121, 140, 0.3)}
 .item-discount {margin:20px 0 0 0}
-.item-discount-inner {display:inline-block; vertical-align:top; padding:0 26px; height:38px; font-size:16px; line-height:38px; color:#fff; background:linear-gradient(160.72deg, #2196f3 -20.69%, #ed5ecd 49.7%, #f44336 128.1%); border-radius:6px}
+.item-discount-inner {display:inline-block; vertical-align:top; padding:0 20px; height:38px; font-size:14px; line-height:38px; color:#fff; background:linear-gradient(160.72deg, #2196f3 -20.69%, #ed5ecd 49.7%, #f44336 128.1%); border-radius:6px}
 .item-buy {font-size:24px; line-height:38px; color:#474747; text-transform:uppercase; padding:29px 0 0 0; font-weight:600}
 .item-shops {line-height:0; padding:14px 0 0 0}
 .item-shops::after {content:""; display:block; clear:both}
