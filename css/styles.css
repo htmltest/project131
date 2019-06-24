@@ -24,10 +24,8 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .welcome-text span {background-image:-webkit-linear-gradient(0, #a771da 0%, rgba(237, 94, 205, 1) 50%, #ef56a3 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
 .welcome-dates {font-weight:600; font-size:24px; line-height:33px; color:#595959; padding:30px 0 0 0}
 .welcome-dates strong {font-weight:bold}
-.welcome-discount {margin:30px auto 0 auto; width:194px; height:194px; padding:42px 0 0 0; background:#ff485e; border:5px solid #fff; color:#fff; border-radius:50%; cursor:pointer}
-.welcome-discount-title {font-size:37px; line-height:37px}
-.welcome-discount-value {font-weight:600; font-size:56px; line-height:56px; padding:1px 0 0 0}
-.welcome-discount-value span {font-size:22px; font-weight:300}
+.welcome-discount {margin:30px auto 0 auto; width:194px; height:194px; font-weight:600; padding:57px 0 0 0; background:#ff485e; border:5px solid #fff; color:#fff; border-radius:50%; cursor:pointer}
+.welcome-discount-title {font-size:22px; line-height:37px}
 
 @media (max-width:1232px) {
     .welcome {height:729px; margin-bottom:75px; background-image:url(../images/welcome-mobile.png)}
@@ -38,10 +36,8 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
     .welcome-text {font-size:44px; line-height:54px}
     .welcome-text img {height:34px; margin-bottom:9px}
     .welcome-dates {font-size:20px; line-height:27px; padding:27px 0 0 0}
-    .welcome-discount {width:168px; height:168px; padding:31px 0 0 0}
-    .welcome-discount-title {font-size:32px; line-height:32px}
-    .welcome-discount-value {font-size:52px; line-height:52px}
-    .welcome-discount-value span {font-size:24px; font-weight:300}
+    .welcome-discount {width:168px; height:168px; padding:46px 0 0 0}
+    .welcome-discount-title {font-size:18px; line-height:32px}
 }
 
 .item {min-height:100vh; height:635px; position:relative}
@@ -66,10 +62,8 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .item-prices-wrap::after {content:""; display:block; clear:both}
 .item-prices {float:left; width:385px; height:103px; border:2px solid #9750b1; border-radius:8px; position:relative}
 .item-prices::before {content:""; display:block; position:absolute; left:235px; top:18px; bottom:18px; width:1px; background:#9750b1}
-.item-price {position:absolute; left:17px; top:12px; font-weight:600; font-size:44px; line-height:44px; color:#ff485e}
+.item-price {position:absolute; left:17px; top:27px; font-weight:600; font-size:44px; line-height:44px; color:#ff485e}
 .item-price span {font-size:20px}
-.item-oldprice {position:absolute; left:17px; top:58px; font-size:20px; line-height:24px; color:#686868}
-.item-oldprice span {font-size:24px; text-decoration:line-through}
 .item-variants {position:absolute; left:256px; top:16px; font-weight:600; font-size:22px; line-height:33px; color:#2d65d1}
 .item-prices-shop {float:left; margin:0 0 0 20px; line-height:0}
 .item-prices-shop a {display:block; border-radius:4px; transition:all 0.2s}
@@ -83,7 +77,6 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
 .item-shop:first-child {margin:0}
 .item-shop a {display:block; border-radius:4px; transition:all 0.2s}
 .item-shop a:hover {transform:translateY(-5px); box-shadow:0px 4px 12px rgba(98, 121, 140, 0.3)}
-.item-shop-notice {float:left; width:168px; margin:0 0 0 15px; font-size:12px; line-height:14px; font-weight:300; color:#383838}
 .item-shops-mobile {display:none}
 .item-prefs {font-weight:600; font-size:15px; line-height:18px; color:#474747; padding:36px 0 0 0}
 .item-prefs::after {content:""; display:block; clear:both}
@@ -108,12 +101,12 @@ img {border:none; max-width:100%; max-height:100%; width:auto; height:auto}
     .item-prices {float:none; margin:0 auto}
     .item-prices-shop {display:none}
     .item-discount {text-align:center}
+    .item-discount-inner {height:auto; line-height:21px; padding:10px 16px}
     .item-buy {text-align:center; padding:16px 0 0 0}
     .item-shops {display:none}
     .item-shops-mobile {display:block; font-size:0; line-height:0; letter-spacing:-1px; margin:0 -6px; text-align:center; padding:9px 0 0 0}
     .item-shop {float:none; display:inline-block; vertical-align:top; margin:0 6px}
     .item-shop:first-child {margin:0 6px}
-    .item-shop-notice {display:block; text-align:center; margin:19px auto 0 auto; width:262px; float:none; font-size:13px; line-height:16px; letter-spacing:0}
     .item-prefs {padding:26px 0 0 0}
     .item-pref {width:33.33%; margin:0; text-align:center; padding:0 20px}
     .item-pref-icon {float:none; height:42px; line-height:42px}
